@@ -608,7 +608,7 @@ contexts:
       embed_scope: markup.raw.block.markdown markup.raw.block.fenced.markdown
       escape: ^(\1)\n
   heading:
-    - match: '\G(#{1,6})(?!#)\s*(?=\S)'
+    - match: '\G(#{1,6})(?!#)\s+(?=\S)'
       captures:
         1: punctuation.definition.heading.markdown
       push:
